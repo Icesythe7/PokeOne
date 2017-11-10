@@ -9,7 +9,7 @@ else
 	require "TestLib"
 end
 
-script.downloadFile(file, script.path.."/TestVer.lua", check, version, true)
+if script.update(file, script.path.."/TestVer.lua", check, version, true) then return end
 
 function onPathAction()
 end
